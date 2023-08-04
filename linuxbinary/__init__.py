@@ -24,12 +24,8 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     chrome_options.binary_location = '/home/site/wwwroot/opt/chrome-linux/chrome'
 
     driver = webdriver.Chrome(options=chrome_options)
-    href_list = []
-    site = 'https://bcz-cbl.be/nl/zuivel-in-cijfers/belgische-noteringen/'
+    site = 'Use your Website'
     driver.get(site)
-    lnks=driver.find_elements(By.TAG_NAME, 'a')
-    for lnk in lnks:
-        a = lnk.get_attribute('href')
-        val = href_list.append(a)
+    title=driver.title
     driver.quit()
-    return func.HttpResponse(f"Hello, {href_list}")
+    return func.HttpResponse(f"Hello, {title}")
