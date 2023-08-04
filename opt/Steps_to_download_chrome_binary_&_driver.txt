@@ -1,0 +1,13 @@
+https://docs.google.com/document/d/1a9cdsljKxCSreR2LDE3KErJhfyC0N9y5ju2UYZb8-J4/edit#
+
+https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Linux_x64/1128078/
+
+curl -# https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux_x64%2F1112728%2Fchrome-linux.zip?alt=media > chrome-linux.zip
+
+curl -# https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Linux_x64%2F1128078%2Fchromedriver_linux64.zip?alt=media > chromedriver.zip
+
+remove genrationkey before "?alt"
+
+sudo apt-get install  libnss3 gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget libatk-bridge2.0-0 libgbm-dev
+
+Test each $./chromedriver and $./chrome-liux/chrome
